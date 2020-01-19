@@ -87,15 +87,13 @@
     color: #E86C77;
   }
   
-  .phone {
-    float: left;
-    position: absolute;
-    top: 70px;
-    font-weight: bold;
-  }
-  
   .gnb_wrap {
     float: right;
+  }
+
+  .gnb_phone {
+    float: right;
+    padding-right : 20px;
   }
   
   .gnb li {
@@ -495,7 +493,7 @@
     }
   
     .gnb li {
-        width: 25%;
+        width: 33%;
     }
   
     .gnb li a {
@@ -517,6 +515,12 @@
   
     .visual_title p {
         font-size: 2em;
+    }
+
+    .visual_title>.wrap {
+      font-size: 3em;
+      color: #E86C77;
+      font-weight: bold;
     }
   
     .btn_scroll {
@@ -636,6 +640,12 @@
   
     .visual_title p {
         font-size: 1.5em;
+    }
+
+    .visual_title>.wrap {
+      font-size: 2em;
+      color: #E86C77;
+      font-weight: bold;
     }
   
     .education .edu_list li {

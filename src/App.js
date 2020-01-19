@@ -10,18 +10,18 @@ import modemdevelop_2 from '../image/modemdevelop_2.png';
 import windowsce_device_1 from '../image/windowsce_device_1.png';
 import windowsmobile_device_1 from '../image/windowsmobile_device_1.png';
 import about_hong from '../image/about_hong.jpg';
+import webhwp_main from  '../image/webhwp_main.png';
 
 function App() {
   return (
     <div id="wrap">
       <header id="header">
-            <div className="full_container">
+            <div>
                 <div className="inner_container clearfix">
                     <div>
                         <h1 className="logo">
                             <a href="#home" style={{color: "#000000", textDecoration:'none'}}>Hong's</a>
                         </h1>
-                        <div className="phone">Tel: 010-7118-2519</div>                              
                     </div>
                     <nav className="gnb_wrap">
                         <ul className="gnb clearfix">
@@ -36,6 +36,11 @@ function App() {
                             </li>
                         </ul>
                     </nav>
+                </div>
+                <div className="inner_container clearfix">
+                    <div className="gnb_phone">
+                        <h4>Tel: 010-7118-2519</h4>
+                   </div>
                 </div>
             </div>
         </header>
@@ -62,7 +67,7 @@ function App() {
                             <p className="pf_dsc">웹한글/웹한글기안기 본문/프레임 구성/기능개발에 참여하였습니다.</p>
                             <ul className="pf_sub_list">
                                 <li>
-                                    <span>Date: 2017.03&nbsp;-&nbsp;2019.12</span>
+                                    <span>Date: 2017.03&nbsp;-&nbsp;2020.02</span>
                                 </li>
                                 <li>
                                     <span>Type: Hangul Ctrl WebApp</span>
@@ -80,12 +85,16 @@ function App() {
                                     <span>Contents</span>
                                 </li>
                                 <li className="pf_content_item">
-                                    <span></span>
+                                    <span>웹한글/웹한글기안기 관련 본문/프레임기능 중 UI/액션 기능 개발</span>
                                 </li>
                                 <li className="pf_content_item">
                                     <span></span>
                                 </li>
                             </ul>
+                        </div>
+                        <div className="pf_pimg clearfix">
+                            <img className="pf_img" src={webhwp_main} alt={"웹한글 메인화면"}></img>
+                            <img className="pf_img" src={webhwp_main} alt={"웹한글 메인화면"}></img>
                         </div>
                     </div>
                     <div className="pf_list clearfix">
