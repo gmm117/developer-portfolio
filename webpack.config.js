@@ -1,4 +1,5 @@
 const path = require("path");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -14,6 +15,8 @@ module.exports = {
     port: 9001
   },
   mode: "production",
+  // devtool: 'source-map',
+  // mode: 'development',
   module : {
     rules: [
         {
@@ -51,6 +54,7 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
         filename: 'style.css'
-    })
+    }),
+    new CleanWebpackPlugin()
   ]
 };
