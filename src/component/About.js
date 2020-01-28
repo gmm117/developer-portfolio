@@ -48,8 +48,8 @@ function About() {
                         <ul className="skill_bar">
                             <li>
                                 <h4>
-                                    <span>HTML,CSS</span>
-                                    <span>60%</span>
+                                    <span style={{display: "inline-block", width: "90%"}}>HTML,CSS</span>
+                                    <span style={{display: "inline-block", width: "10%", textAlign: "right"}}>60%</span>
                                 </h4>
                                 <div className="skill_progress"> 
                                     <div className="skill_progress_value" style={{width: "60%"}}></div>
@@ -57,8 +57,8 @@ function About() {
                             </li>
                             <li>
                                 <h4>
-                                    <span>JavaScript</span>
-                                    <span>80%</span>
+                                    <span style={{display: "inline-block", width: "90%"}}>JavaScript</span>
+                                    <span style={{display: "inline-block", width: "10%", textAlign: "right"}}>80%</span>
                                 </h4>
                                 <div className="skill_progress"> 
                                     <div className="skill_progress_value" style={{width: "80%"}}></div>
@@ -76,17 +76,17 @@ function About() {
                         <ul className="skill_bar">
                             <li>
                                 <h4>
-                                    <span>C,C++</span>
-                                    <span>90%</span>
+                                    <span style={{display: "inline-block", width: "90%"}}>C,C++</span>
+                                    <span style={{display: "inline-block", width: "10%", textAlign: "right"}}>90%</span>
                                 </h4>
                                 <div className="skill_progress"> 
-                                    <div className="skill_progress_value" style={{width: "90%"}}></div>
+                                    <div className="skill_progress_value" style={{width: "92%"}}></div>
                                 </div>
                             </li>
                             <li>
                                 <h4>
-                                    <span>C#,WPF</span>
-                                    <span>80%</span>
+                                    <span style={{display: "inline-block", width: "90%"}}>C#,WPF</span>
+                                    <span style={{display: "inline-block", width: "10%", textAlign: "right"}}>80%</span>
                                 </h4>
                                 <div className="skill_progress"> 
                                     <div className="skill_progress_value" style={{width: "80%"}}></div>
@@ -94,8 +94,8 @@ function About() {
                             </li>
                             <li>
                                 <h4>
-                                    <span>MFC,ATL,WTL</span>
-                                    <span>70%</span>
+                                    <span style={{display: "inline-block", width: "90%"}}>MFC,ATL,WTL</span>
+                                    <span style={{display: "inline-block", width: "10%", textAlign: "right"}}>70%</span>
                                 </h4>
                                 <div className="skill_progress"> 
                                     <div className="skill_progress_value" style={{width: "70%"}}></div>
@@ -103,8 +103,8 @@ function About() {
                             </li>
                             <li>
                                 <h4>
-                                    <span>WCF,Spring,NHibernate</span>
-                                    <span>60%</span>
+                                    <span style={{display: "inline-block", width: "90%"}}>WCF,Spring,NHibernate</span>
+                                    <span style={{display: "inline-block", width: "10%", textAlign: "right"}}>60%</span>
                                 </h4>
                                 <div className="skill_progress"> 
                                     <div className="skill_progress_value" style={{width: "60%"}}></div>
