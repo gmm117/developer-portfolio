@@ -70,7 +70,7 @@ function Portfolio() {
     return (
         <section id="portfolio">
             <div className="inner_container">
-                <Portfolio_title name="Portfolio" />
+                <Portfolio_title title="Portfolio" />
                 <Portfolio_list 
                     seq="01"
                     name="웹한글/웹한글기안기 UI개발"
