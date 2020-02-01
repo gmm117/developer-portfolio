@@ -19,6 +19,9 @@ function Header () {
                                 <a href="#portfolio">Portfolio</a>
                             </li>
                             <li>
+                                <a href="#project">Project</a>
+                            </li>
+                            <li>
                                 <a href="#about">About</a>
                             </li>
                         </ul>

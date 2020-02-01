@@ -1,4 +1,6 @@
 import React from 'react';
+import { Title, List } from './Common';
+
 import elecchart_1 from '../../image/elecchart_1.png';
 import insurechart_1 from '../../image/insurechart_1.png';
 import oldinsurechart_1 from '../../image/oldinsurechart_1.png';
@@ -9,69 +11,12 @@ import windowsce_device_1 from '../../image/windowsce_device_1.png';
 import windowsmobile_device_1 from '../../image/windowsmobile_device_1.png';
 import webhwp_main from  '../../image/webhwp_main.png';
 
-function Portfolio_list( { seq, name, desc, sublist, image }) {
-    const { date, type, role, skills, url, contents } = sublist;
-    const { href, value } = url;
-    const { content1, content2 } = contents;
-    const { image1, image2 } = image;
-    const { src1, alt1 } = image1;
-    const { src2, alt2} = image2; 
-
-    return (
-        <div className="pf_list clearfix">
-            <div className="pf_info">
-                <span className="pf_num">{seq}</span>
-                <h3 className="pf_name">{name}</h3>
-                <p className="pf_dsc">{desc}</p>
-                <ul className="pf_sub_list">
-                    <li>
-                        <span>{date}</span>
-                    </li>
-                    <li>
-                        <span>{type}</span>
-                    </li>
-                    <li>
-                        <span>{role}</span>
-                    </li>
-                    <li>
-                        <span>{skills}</span>
-                    </li>
-                    <li>
-                        <span>URL : </span><a href={href} target="_blank">{value}</a> 
-                    </li>
-                    <li>
-                        <span>Contents</span>
-                    </li>
-                    <li className="pf_content_item">
-                        <span>{content1}</span>
-                    </li>
-                    <li className="pf_content_item">
-                        <span>{content2}</span>
-                    </li>
-                </ul>
-            </div>
-            <div className="pf_pimg clearfix">
-                <img className="pf_img" src={src1} alt={alt1}></img>
-                <img className="pf_img" src={src2} alt={alt2}></img>
-            </div>
-        </div>
-    );
-}
-
-function Portfolio_title( { title } ) {
-    return (
-        <div className="title_wrap">
-            <h2 className="title">{title}</h2>
-        </div>
-    );
-}
-
 function Portfolio() {
     return (
         <section id="portfolio">
             <div className="inner_container">
-                <Portfolio_title title="Portfolio" />
-                <Portfolio_list 
+                <Title title="Portfolio" />
+                <List 
                     seq="01"
                     name="웹한글/웹한글기안기 UI개발"
                     desc="웹한글/웹한글기안기 본문/프레임 구성/기능개발에 참여하였습니다."
@@ -100,7 +45,7 @@ function Portfolio() {
                         }
                     }}
                 />
-                <Portfolio_list 
+                <List 
                     seq="02" 
                     name="글로벌 치과용 프로그램 개발"
                     desc="글로벌 치과용 프로그램(OnePMS) 중 보험진료/청구/EDI 업무 개발"
@@ -129,7 +74,7 @@ function Portfolio() {
                         }
                     }}
                 />
-                <Portfolio_list 
+                <List 
                     seq="03" 
                     name="국내 치과용 프로그램 개발"
                     desc="국내 치과용 프로그램(하나로,두번에) 의료용 보험진료/청구/전자문서 기능개발"
@@ -158,7 +103,7 @@ function Portfolio() {
                         }
                     }}
                 />
-                <Portfolio_list 
+                <List 
                     seq="04" 
                     name="단말기 모뎀 디바이스 개발/이동통신사 품질보증"
                     desc="Telit CC864(2G)/UC864(3G)/MC55I(GSM) 모뎀 디바이스 개발, SKT/KT 품질보증 업무"
@@ -187,7 +132,7 @@ function Portfolio() {
                         }
                     }}
                 />
-                <Portfolio_list 
+                <List 
                     seq="05" 
                     name="Wince, WindowsMobile 단말기 개발"
                     desc="Wince 5.0, Windows Mobile 5.0/6.1/6.5/65060/6530 단말기 개발 & 유지보수"

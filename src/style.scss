@@ -224,18 +224,18 @@
     font-weight: bold;
   }
   
-  .profile .character {
+  .profile .contents {
     float: left;
     padding-top: 30px;
     width: 100%;
     color: #666;
   }
   
-  .profile .character li {
+  .profile .contents li {
     padding-bottom: 5px;
   }
   
-  .profile .character li p {
+  .profile .contents li p {
     padding-bottom: 20px;
     font-weight: bold;
   }
@@ -279,47 +279,22 @@
   .skill .skill_bar .bar_wrap {
     position: relative;
   }
-  
-  .skill .skill_bar .bar_basic {
-    margin-top: 10px;
-    width: 100%;
-    height: 3px;
-    background-color: #dfdfdf;
-  }
-  
-  .skill .skill_bar .bar_move {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background-color: #E86C77;
-  }
-  
-  .skill .skill_bar .bar_move.bar_01 {
+
+  .skill_bar span:nth-child(1) {
+    display: inline-block;
     width: 90%;
-    transition: 1s;
   }
-  
-  .skill .skill_bar .bar_move.bar_02 {
-    width: 90%;
-    transition: 1s;
+
+  .skill_bar span:nth-child(2) {
+    display: inline-block;
+    width: 10%;
   }
-  
-  .skill .skill_bar .bar_move.bar_03 {
-    width: 70%;
-    transition: 1s;
-  }
-  
-  .skill .skill_bar .bar_move.bar_04 {
-    width: 50%;
-    transition: 1s;
-  }
-  
-  .skill .skill_bar .bar_move.bar_05 {
-    width: 90%;
-    transition: 1s;
-  }
+
+  // .skill_bar h4:nth-last-child(1) {
+  //   display: inline-block;
+  //   widows: 10%;
+  //   text-align: right;
+  // }
   
   .skill_progress {
     background-color: lightgray;
@@ -339,6 +314,11 @@
   
   /* #portfolio{} */
   #portfolio {
+    padding-top: 100px
+  }
+
+  /* #project{} */
+  #project {
     padding-top: 100px
   }
   

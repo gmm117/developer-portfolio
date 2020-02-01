@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './Home';
 import Portfolio from './Portfolio';
+import Project from './Project';
 import About from './About';
 
 function Container() {
@@ -8,6 +9,7 @@ function Container() {
         <div id="container">
             <Home />
             <Portfolio />
+            <Project />
             <About />
         </div>
     );
